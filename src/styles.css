@@ -1,12 +1,11 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
-
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -51,9 +50,14 @@ table {
 	border-spacing: 0;
 }
 
+:root {
+	--primary-color: #f4a116;
+	--accent-color: #D18B13;
+}
+
 body {
     background-color: rgb(12, 12, 12);
     padding: 1rem;
-	overflow-y: hidden;
+	overflow-y: scroll;
 	font-family: 'Roboto', sans-serif;
 }
