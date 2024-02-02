@@ -26,3 +26,33 @@ header {
 svg {
     fill: white;
 }
+
+/* Medium screen */
+@media screen and (min-width:768px) {
+    .logo {
+        width: 300px;
+    }
+
+    .sound-logo {
+        right: 1.5rem;
+        top: 1.5rem;
+    }
+    
+    .app-title {
+        font-size: 2rem;
+    }
+}
+
+/* Large Screen */
+@media screen and (min-width:992px) {
+    .app-title {
+        font-size: 2.5rem;
+    }
+    .sound-logo {
+        right: 2rem;
+        top: 2rem;
+    }
+    .logo {
+        width: 350px;
+    }
+}
