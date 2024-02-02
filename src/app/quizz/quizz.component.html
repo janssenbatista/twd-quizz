@@ -1,0 +1,33 @@
+<main>
+  @if (!isGameEnded) {
+  <div class="quizz-container">
+    <p class="question-title">{{ questions[currentQuestion].title }}</p>
+    <div class="answers-container">
+      @for (answer of questions[currentQuestion].answers; track $index) {
+      <button
+        (click)="setNextQuestion(answer.value)"
+        class="button filled-button"
+      >
+        {{ answer.description }}
+      </button>
+      }
+    </div>
+    <p class="counter">
+      {{ currentQuestion + 1 }}/<span>{{ questions.length }}</span>
+    </p>
+  </div>
+  } @else {
+  <div class="result-container">
+    <img
+      class="character"
+      width="400"
+      src="{{ characterPhoto }}-400w.jpg"
+      alt="{{ characterName }} photo"
+    />
+    <p>{{ resultMessage }}</p>
+    <button (click)="resetGame()" class="button outlined-button">
+      Reiniciar Jogo
+    </button>
+  </div>
+  }
+</main>
